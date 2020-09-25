@@ -91,6 +91,7 @@ func buildElasticSearchURL() string {
 func generateOptions() map[string]bool {
 	return map[string]bool{
 		"description": detailed,
+		"action":      detailed,
 		"start_time":  startTime,
 		"cancellable": cancellable,
 	}

@@ -18,6 +18,9 @@ func PrintTasks(data map[string]interface{}, options map[string]bool) {
 	if options["cancellable"] {
 		headers = append(headers, "cancellable")
 	}
+	if options["action"] {
+		headers = append(headers, "action")
+	}
 	if options["description"] {
 		headers = append(headers, "description")
 	}
@@ -38,6 +41,10 @@ func PrintTasks(data map[string]interface{}, options map[string]bool) {
 			if options["cancellable"] {
 				cancellable := task.(map[string]interface{})["cancellable"].(bool)
 				row = append(row, cancellable)
+			}
+			if options["action"] {
+				action := task.(map[string]interface{})["action"].(string)
+				row = append(row, action)
 			}
 			if options["description"] {
 				description := task.(map[string]interface{})["description"].(string)
