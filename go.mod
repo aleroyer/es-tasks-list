@@ -4,7 +4,7 @@ go 1.14
 
 require (
 	github.com/asaskevich/govalidator v0.0.0-20200108200545-475eaeb16496 // indirect
-	github.com/elastic/go-elasticsearch/v7 v7.5.1-0.20200409075911-14061b088525
+	github.com/elastic/go-elasticsearch/v7 v7.9.0
 	github.com/go-openapi/errors v0.19.4 // indirect
 	github.com/go-openapi/strfmt v0.19.5 // indirect
 	github.com/jedib0t/go-pretty v4.3.0+incompatible
